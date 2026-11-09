@@ -1,0 +1,16 @@
+# Hermes profile distribution manifest.
+name: sales
+version: 1.0.0
+description: >-
+  Coaching Hive Sales for online coaches. Owns sales call prep, call recaps, proposals, objection practice, payment follow-ups and pipeline review. Draft-only; never changes a price or offer.
+hermes_requires: ">=0.20.0"
+author: Coaching Hive
+license: MIT
+# Only these paths are installed and replaced on update. Memories, sessions,
+# keys, .env and skills the coach makes stay untouched.
+distribution_owned:
+  - distribution.yaml
+  - profile.yaml
+  - SOUL.md
+  - config.yaml
+  - skills/coaching-hive
